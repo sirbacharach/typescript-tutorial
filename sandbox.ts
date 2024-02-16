@@ -1,23 +1,30 @@
-let names = ['luigi', 'mario','yoshi'];
+let ninjas: string[] = [];
 
-names.push('toad');
+ninjas.push('rob');
 
-let numbers = [10, 20, 30, 40];
-
-numbers.push(25);
+let mixed: (string|number|boolean)[] = [];
 
 
-let mixed = ['ken', 4, 'chun-li', 8, 9, true]
+// union types, using rounded brackets before object type
+mixed.push('hello');
+mixed.push(20);
+mixed.push(false)
 
-mixed.push('ryu');
-mixed.push(10);
-mixed[0] = 3;
+console.log(mixed);
 
-let ninja = {
-    name: 'mario',
-    belt: 'black',
-    age: 30
-};
+// no need to use rounded brackers or union type for non array variables
+let uid: string|number;
 
-ninja.age = 40;
-ninja.name = 'ryu'
+uid = 123;
+uid = '123';
+
+let ninjaOne: object;
+ninjaOne = {name: 'yoshi, age: 30'};
+
+let ninjaTwo: {
+    name: string,
+    age: number,
+    beltColour: string
+};'}
+
+ninjaTwo = {name: 'mario', age: 20, beltColour: 'black'}

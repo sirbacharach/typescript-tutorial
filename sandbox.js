@@ -1,10 +1,7 @@
-var character = 'mario';
-var age = 30;
-var isBackBelt = false;
-character = 'luigi';
-age = 40;
-isBackBelt = true;
-var circ = function (diameter) {
-    return diameter * Math.PI;
-};
-console.log(circ(7.5));
+var ninjas = [];
+ninjas.push('rob');
+var mixed = [];
+mixed.push('hello');
+mixed.push(20);
+mixed.push(false);
+console.log(mixed);
