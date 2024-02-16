@@ -25,6 +25,8 @@ let ninjaTwo: {
     name: string,
     age: number,
     beltColour: string
-};'}
+};
 
 ninjaTwo = {name: 'mario', age: 20, beltColour: 'black'}
+ 
+console.log('test')
